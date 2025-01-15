@@ -1,6 +1,9 @@
 .PHONY: install test run clean docker-build docker-run docker-test help
 
 # Installation des dépendances
+init:
+	python3 -m venv venv
+	venv/bin/pip install -r requirements.txt
 install:
 	pip install -r requirements.txt
 
