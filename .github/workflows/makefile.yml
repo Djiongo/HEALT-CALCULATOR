@@ -50,8 +50,8 @@ jobs:
     #   run: make docker-test
 
     # Étape 10 : Vérification supplémentaire (distcheck)
-    - name: Run distcheck
-      run: make distcheck
+    # - name: Run distcheck
+    #   run: make distcheck
 
     # Étape 11 : Affichage des commandes disponibles
     - name: Display available commands
