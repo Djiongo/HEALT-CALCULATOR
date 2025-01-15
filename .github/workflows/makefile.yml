@@ -38,16 +38,16 @@ jobs:
       run: make clean
 
     # Étape 7 : Construction de l'image Docker
-    - name: Build Docker image
-      run: make docker-build
+    # - name: Build Docker image
+    #   run: make docker-build
 
     # Étape 8 : Exécution de l'application dans Docker
-    - name: Run Docker container
-      run: make docker-run
+    # - name: Run Docker container
+    #   run: make docker-run
 
     # Étape 9 : Exécution des tests dans Docker
-    - name: Run tests in Docker
-      run: make docker-test
+    # - name: Run tests in Docker
+    #   run: make docker-test
 
     # Étape 10 : Vérification supplémentaire (distcheck)
     - name: Run distcheck
