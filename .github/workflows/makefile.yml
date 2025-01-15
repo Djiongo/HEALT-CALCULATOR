@@ -1,0 +1,30 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout 
+    - uses: actions/checkout@v4
+
+    - name: python install
+    - uses: actions/setup-phtyon@v2
+      with:
+        python-version: 3.9 
+
+    - name: Install dependencies
+      run: make init
+
+    - name: test
+      run: make test
+
+    - name: Run distcheck
+      run: make distcheck
