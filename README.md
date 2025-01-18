@@ -60,7 +60,7 @@ Python (Recommended: v3.8+)
     Clone the project repository
 git clone https://github.com/your-repo/calculator.git
 cd calculator
-   ```
+           ```
 
 2. **Set Up the Environment**:
    - Create and activate a virtual environment (recommended for managing dependencies).
@@ -115,7 +115,7 @@ docker tag calculator:latest calculator25.azurecr.io/calculator:latest
 
 # Push the image to ACR
 docker push calculator25.azurecr.io/calculator:latest
-     ```
+ ```
   - Use the `.env` file to store any environment-specific configurations or sensitive information. Be sure to keep this file out of version control by listing it in `.gitignore`.
 
 ## Deploy the App to Azure Web App
