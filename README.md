@@ -9,7 +9,7 @@ The repository is organized as follows:
 ```plaintext
 HEALT-CALCULATOR/
 ├── app.py
-├── healthutils.py
+├── health_utils.py
 ├── test.py
 ├── requirements.txt
 ├── Makefile
@@ -26,7 +26,7 @@ github/
 
 - **`app.py`**: The main application file for the Flask app. It sets up routes and connects them to functions in `utils.py` to provide API endpoints for app operations.
 
-- **`utils.py`**: Contains utility functions for core operations like addition and subtraction. This file is designed to house the main logic for the app’s functionality.
+- **`health_utils.py`**: Contains utility functions for core operations like addition and subtraction. This file is designed to house the main logic for the app’s functionality.
 
 - **`test.py`**: A unit test file that includes tests for the functions defined in `utils.py`. This file ensures that the core functionality behaves as expected.
 
