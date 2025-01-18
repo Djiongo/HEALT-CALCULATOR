@@ -25,8 +25,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: calculator25.azurecr.io
-          username: calculator25
-          password: 0tUUkBWukQlWxI+wGx4rvgZt0Wkhxt3RMk9iiTgGDe+ACRCBK6oE
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Build and push container image to registry
         uses: docker/build-push-action@v5
